@@ -1,2 +1,5 @@
-# kuka_controller
-Workspace Velocity Controller for KUKA
+# Control and Planning Code for KUKA Arm for 106A Ping-Pong Robot Project
+
+This repo contains the relevant code for the Ping-Pong Robot Project for 106A. The code in this repo is not structured in a ROS2 package as it was when we recorded the demo. The reason for this is because we wrote all this code in the Ping Pong Robot repo on the lab computer, which we cannot make public. So, we have put the relevant bits of code into this repo.
+
+In addition to this code that we have written, our project utilized code from two other sources. First, we used the code from [LBR FRI ROS2 Stack repo][https://github.com/lbr-stack/lbr_fri_ros2_stack]. This repo translated ROS2 code into FRI code that can communicate with the KUKA. This code sets up the KUKA with the correct settings, and initialized the `joint_trajectory_controller` node that we use to move the arm. Secondly, we used some pre-written vision code from the Ping Pong Robot project that had been written by research team members in previous semesters. We ended up having to refactor a lot of the vision code to get it to work in real time, but since the core of this code was written by others, we have chosen not to include it in this repo.
